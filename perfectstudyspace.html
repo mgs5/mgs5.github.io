@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/perfectspace.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>📚 Perfect Study Spot</title>
+  <link rel="stylesheet" href="CSS/perfectspace.css">
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Study%20Spaces%20-%20St.Udy.html">Study Spaces</a></li>
+        <li><a href="./perfectstudyspace.html">Find Your Perfect Study Space</a></li>
+    </ul>
+    </div>
+
+  <div class="jumbotron">
+
+
+<div class="fixit">
+<div id="heading">Finding the Perfect Study Spot for You!</div>
+<div id="intro">Please fill out this form so we can help you choose the perfect study spot.
+</div>
+</div>
+<div class="container">
+
+
+<div class="col-sm-5">
+<br></br>
+<div class ="questions">
+  <h2> I am a </h2>
+  <select>
+    <option>Undergraduate</option>
+    <option>Postgraduate</option>
+    <option>Visitor</option>
+  </select>
+  <div></div>
+  <h2> I am looking for a </h2>
+    <select>
+    <option>Quiet Space </option>
+    <option>Group Work </option>
+      </select>
+  <div></div>
+  <h2> Serving food and drinks? </h2>
+  <select>
+    <option>Food</option>
+    <option>Drinks</option>
+    <option>Both</option>
+    <option>None</option>
+  </select>
+  <div></div>
+  <h2> Amenities </h2>
+  <div class ="choices">
+  <label class="container">Wifi
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Printer
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Library
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Computers
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <br/>
+  <br></br>
+
+  <button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+    alert("Our recommendation to you: Try Pret!");
+}
+</script>
+
+  <br></br>
+</div>
+</div>
+</div>
+
+<br></br>
+<br></br>
+
+
+
+<div class="col-sm-7">
+<div id="map">
+</div>
+
+
+  <br></br>
+</div>
+
+</div>
+
+<script>
+  function initMap() {
+    var MainLibrary = {lat: 56.341971, lng: -2.796073999999976};
+    var locations = [
+      ['MainLibrary', 56.341971, -2.796073999999976, 1],
+      ['King James Library', 56.33938999999999, -2.794532000000004, 2],
+      ['JF Allen Library', 56.3398131,-2.807177300000035, 3],
+      ['The Richardson Research Library at Martyrs Kirk', 56.340937,-2.7943789999999353, 4],
+      ['Bell Pettigrew Museum', 56.338097, -2.793821, 5],
+      ['Old Union Cafe', 56.341393, -2.795280, 6],
+      ['Rectors', 56.340284, -2.789361, 7],
+      ['Pret', 56.340559, -2.796662, 8]];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: MainLibrary
+    });
+
+    var marker, i;
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm3b51A0WAksLYIAvcc_8u5WJW9Neq030&callback=initMap">
+</script>
+
+<br></br>
+<br></br>
+
+<div class="social">
+<a href="http://facebook.com" class="fa fa-facebook"></a>
+<a href="mailto: St.udy@st-andrews.ac.uk" class="fa fa-envelope-o"></a>
+<a href="http://twitter.com" class="fa fa-twitter"></a>
+<a href="http://instagram.com" class="fa fa-instagram"></a>
+</div>
+</div>
+
+  </body>
+
+  </html>

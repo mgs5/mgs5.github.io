@@ -1,0 +1,260 @@
+.jumbotron{
+  background-image: url("../book.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 800px;
+}
+
+#heading{
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 30px;
+  font: Helvetica;
+  text-align: center;
+  background-color: white;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+ul {
+   font-family: Avenir, Helvetica, sans-serif;
+   font-size: 16px;
+   list-style-type: none;
+   color: white;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: black;
+    text-align: center;
+    width: 100%
+
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover {
+   background-color: grey;
+   text-decoration: none;
+   color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+a {color: inherit;
+text-decoration: none;}
+/*
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+*/
+.main {margin-top: 30px;
+}
+
+/*.fixit {
+  position: fixed;
+  text-align: center;
+} */
+
+h2{
+  color: gray;
+}
+
+#intro{
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+  padding-top: 120px;
+}
+
+.questions{
+  font-family: Avenir, Helvetica, sans-serif;
+}
+
+.choices{
+  color:gray;
+  font-size: 15px;
+}
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+
+
+  &:before,
+  &:after {
+    color: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    border: .075em solid;
+  }
+
+  &:before {
+    border-radius: inherit;
+    height: .75em;
+    transform: translate(.125em, .125em);
+    width: .75em;
+  }
+
+  &:after {
+    border-radius: 1em;
+    box-shadow: .2em -.2em 0 -.16em;
+    height: .4em;
+    transform: translate(.3em, .3em);
+    width: .4em;
+  }
+}
+
+.social {text-align: center;
+}
+
+.fa-envelope-o {
+  background: #c71610;
+  color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+
+
+&:before,
+&:after {
+     color: #fff;
+     content: '';
+     display: block;
+     position: absolute;
+     border: .075em solid;
+ }
+
+&:before {
+     border-radius: inherit;
+     height: .75em;
+     transform: translate(.125em, .125em);
+     width: .75em;
+ }
+
+&:after {
+     border-radius: 1em;
+     box-shadow: .2em -.2em 0 -.16em;
+     height: .4em;
+     transform: translate(.3em, .3em);
+     width: .4em;
+ }
+}
+
+.social {text-align: center;
+}
+
+.fa-envelope-o {
+    background: #c71610;
+    color: white;
+}
